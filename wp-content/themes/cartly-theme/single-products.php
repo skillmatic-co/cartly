@@ -3,7 +3,7 @@
 
 <?php
 
-$product = $store->GetProducts('publish', 'large', 'post_date', NULL, array($post->ID));
+$product = $store->GetProducts('publish', 'large', 'post_date', NULL, array($post->ID))[0];
 
 $productImages = get_posts(array(
 	'post_type' => 'attachment',
