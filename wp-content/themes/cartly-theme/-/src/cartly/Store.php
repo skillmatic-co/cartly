@@ -172,7 +172,7 @@ class Store
 			$this->GetProductMeta($product, $product->ID, $imageSize);
 		}
 		
-		return count($products) == 1 ? $products[0] : $products;
+		return $products;
 	}
 	
 	public function GetProductPrice($product, $optionId)
